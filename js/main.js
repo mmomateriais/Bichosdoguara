@@ -45,7 +45,7 @@
       const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          kids.forEach((k, i) => setTimeout(() => k.classList.add("is-in"), i * 90));
+          kids.forEach((k, i) => setTimeout(() => k.classList.add("is-in"), i * 55));
           io.unobserve(group);
         });
       }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
