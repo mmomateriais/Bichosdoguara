@@ -8,7 +8,7 @@
 /* ---------- TOKENS ---------- */
 :root {
   --orange:      #D9801E;
-  --orange-deep: #B96A16;
+  --orange-deep: #9D5A13; /* darkened from #B96A16 — the brand shade sat at ~4.2:1 on white, just under AA for small text */
   --orange-soft: #F6E2C9;
   --green:       #556855;
   --green-deep:  #435343;
@@ -56,8 +56,8 @@ body {
 }
 
 img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+a { color: inherit; text-decoration: none; touch-action: manipulation; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; touch-action: manipulation; }
 ul { list-style: none; }
 :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 4px; }
 
@@ -135,7 +135,7 @@ section { position: relative; }
 .nav__links a:hover { color: var(--orange-deep); }
 .nav__links a:hover::after { width: 100%; }
 
-.nav__toggle { display: none; width: 40px; height: 40px; flex-direction: column; gap: 5px; align-items: center; justify-content: center; }
+.nav__toggle { display: none; width: 44px; height: 44px; flex-direction: column; gap: 5px; align-items: center; justify-content: center; }
 .nav__toggle span { width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .35s var(--ease), opacity .2s ease; }
 .nav.is-open .nav__toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav.is-open .nav__toggle span:nth-child(2) { opacity: 0; }
